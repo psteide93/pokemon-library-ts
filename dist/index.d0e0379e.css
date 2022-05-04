@@ -1,18 +1,19 @@
-@import "https://fonts.googleapis.com/css2?family=Miltonian&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
+body {
+  background-image: url("1794017.0107ac46.webp");
+  flex-direction: column;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+  display: flex;
+}
+
 h1 {
-  font-family: Miltonian, cursive;
-  font-size: 64px;
+  margin-top: 12px;
+  font-size: 52px;
 }
 
 h1 a {
   color: #f06;
-}
-
-body {
-  background-color: #7ba7f9;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
 }
 
 main {
@@ -27,15 +28,15 @@ a, a:visited {
 
 h2 {
   margin-top: 16px;
-  font-size: 48px;
-}
-
-li {
-  display: inline-block;
+  font-size: 36px;
 }
 
 ul {
-  margin: 12px 256px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin: 12px 128px;
+  display: grid;
 }
 
 .hidden {
@@ -43,7 +44,11 @@ ul {
 }
 
 ul a {
-  color: #fff;
+  color: #000;
+}
+
+figcaption a {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=index.d0e0379e.css.map */

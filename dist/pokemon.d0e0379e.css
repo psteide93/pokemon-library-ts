@@ -1,9 +1,49 @@
+@import "https://fonts.googleapis.com/css2?family=Miltonian&display=swap";
+h1 {
+  font-family: Miltonian, cursive;
+  font-size: 64px;
+}
+
+h1 a {
+  color: #f06;
+}
+
+body {
+  background-color: #7ba7f9;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 16px;
+  font-size: 48px;
+}
+
 li {
   display: inline-block;
 }
 
+ul {
+  margin: 12px 256px;
+}
+
 .hidden {
   display: none;
+}
+
+ul a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=pokemon.d0e0379e.css.map */

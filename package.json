@@ -4,8 +4,9 @@
   "description": "You're making a PokeDex, a list of Pokemon.",
   "scripts": {
     "test": "jest",
-    "dev" : "parcel site/index.html",
-    "build" : "parcel build site/index.html"
+    "dev": "parcel site/index.html",
+    "dev2": "parcel site/pokemon.html",
+    "build": "parcel build site/index.html"
   },
   "repository": {
     "type": "git",

@@ -586,7 +586,7 @@ fetch(pokeAPIURL).then((response)=>response.json()
 }).then((pokemon1)=>{
     console.log(pokemon1);
     pokemon1.forEach((pokemon)=>{
-        const pokemonOption = document.createElement("div");
+        const pokemonOption = document.createElement("li");
         pokemonOption.classList.add("pokemon-listing");
         pokemonOption.innerHTML = `
             <figure>

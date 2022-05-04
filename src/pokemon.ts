@@ -21,11 +21,11 @@ type AbilityObject = {
 
 
 
-type FlavorText = { 
-flavor_text: string;
-language: {
-  name: string;
-};
+type FlavorText = {
+  flavor_text: string;
+  language: {
+    name: string;
+  };
 }
 
 
@@ -34,7 +34,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
   .then((response: Response) => response.json())
   .then((pokemonInfo: PokemonInfo) => {
     const pokemonDetails = document.createElement("div")
-    pokemonDetails.classList.add("pokemon.details")
+    pokemonDetails.classList.add("pokemon-details")
     pokemonDetails.innerHTML = `
     <figure>
       <img src="${pokemonInfo.sprites.front_shiny}" alt = "${pokemonInfo.name}" />
@@ -55,7 +55,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
       fetch(abilityObject.ability.url)
         .then(response => response.json())
         .then(abilityInfo => {
-          console.log(abilityInfo)
           const abilityText = abilityInfo.flavor_text_entries.find((flavor_text_entry: FlavorText) => flavor_text_entry.language.name = "en")
           const abilityListItem = document.createElement("li")
           abilityListItem.innerHTML = `
@@ -64,10 +63,10 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
           `
           abilityList.append(abilityListItem)
         })
-    
+
     })
 
-    if(abilitiesContainer){
+    if (abilitiesContainer) {
       abilitiesContainer.append(abilityList)
     }
 
