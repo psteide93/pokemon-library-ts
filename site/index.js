@@ -19,6 +19,10 @@ fetch(pokeAPIURL)
             </figure>
 
     `;
+        const spinner = document.querySelector(".spinner");
+        if (spinner) {
+            spinner.classList.add("hidden");
+        }
         if (pokemonList) {
             pokemonList.append(pokemonOption);
         }
