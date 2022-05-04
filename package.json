@@ -2,7 +2,7 @@
   "name": "pokemon-library-ts",
   "version": "1.0.0",
   "description": "You're making a PokeDex, a list of Pokemon.",
-  "main": "index.js",
+
   "scripts": {
     "test": "jest"
   },

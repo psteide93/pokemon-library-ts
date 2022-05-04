@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.capitalizeFirstLetter = void 0;
 const pokemonList = document.querySelector("ul");
 const pokeAPIURL = "https://pokeapi.co/api/v2/pokemon?offset=151&limit=50";
 fetch(pokeAPIURL)
@@ -28,3 +30,7 @@ fetch(pokeAPIURL)
         }
     });
 });
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+exports.capitalizeFirstLetter = capitalizeFirstLetter;
