@@ -43,6 +43,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover{
+  color: red
+}
+
 h2 {
   font-size: 36px;
   margin-top: 16px;

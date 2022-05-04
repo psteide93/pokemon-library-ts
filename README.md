@@ -1,5 +1,8 @@
 # PokeDex (TypeScript Edition)
 
+### Deployed Link 
+https://calm-cajeta-bd930e.netlify.app/pokemon.html?pokemon=152
+
 You're making a PokeDex, a list of Pokemon.
 
 ## User Stories

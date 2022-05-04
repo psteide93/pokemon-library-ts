@@ -10,7 +10,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
     .then((response) => response.json())
     .then((pokemonInfo) => {
     const pokemonDetails = document.createElement("div");
-    pokemonDetails.classList.add("pokemon.details");
+    pokemonDetails.classList.add("pokemon-details");
     pokemonDetails.innerHTML = `
     <figure>
       <img src="${pokemonInfo.sprites.front_shiny}" alt = "${pokemonInfo.name}" />
@@ -29,7 +29,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
         fetch(abilityObject.ability.url)
             .then(response => response.json())
             .then(abilityInfo => {
-            console.log(abilityInfo);
             const abilityText = abilityInfo.flavor_text_entries.find((flavor_text_entry) => flavor_text_entry.language.name = "en");
             const abilityListItem = document.createElement("li");
             abilityListItem.innerHTML = `
