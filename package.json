@@ -2,9 +2,10 @@
   "name": "pokemon-library-ts",
   "version": "1.0.0",
   "description": "You're making a PokeDex, a list of Pokemon.",
-
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev" : "parcel site/index.html",
+    "build" : "parcel build site/index.html"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "parcel": "^2.5.0"
   }
 }

@@ -544,12 +544,12 @@ fetch(pokeAPIURL).then((response)=>response.json()
 }).then((pokemon1)=>{
     console.log(pokemon1);
     pokemon1.forEach((pokemon)=>{
-        const pokemonOption = document.createElement("div");
+        const pokemonOption = document.createElement("li");
         pokemonOption.classList.add("pokemon-listing");
         pokemonOption.innerHTML = `
             <figure>
                 <img src = "${pokemon.sprites.front_shiny}" alt = "${pokemon.name}"/>
-                <figcaption><a href="pokemon.html?pokemon=${pokemon.id}">${pokemon.name}<a/></figcaption>
+                <figcaption><a href="pokemon.html?pokemon=${pokemon.id}">${capitalizeFirstLetter(pokemon.name)}<a/></figcaption>
             </figure>
 
     `;

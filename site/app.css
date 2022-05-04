@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+
+h1{
+  font-family: 'Miltonian', cursive;
+  font-size: 64px;
+}
+
+h1 a{
+color: hsl(336, 100%, 50%)
+}
+
+body{
+  background-color: hsl(219, 91%, 73%)
+}
+
+body{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+a, a:visited{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 48px;
+  margin-top: 16px;
+}
+
+li {
+  display: inline-block
+}
+
+ul{
+  margin: 12px 256px; 
+}
+
 .hidden {
   display: none;
+}
+
+ul a {
+  color:white;
 }
